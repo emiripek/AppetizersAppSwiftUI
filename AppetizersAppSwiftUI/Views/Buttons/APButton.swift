@@ -17,11 +17,11 @@ struct APButton: View {
             .fontWeight(.semibold)
             .frame(width: 260, height: 50)
             .foregroundColor(.white)
-            .background(Color.brandPrimary)
+            .backgroundStyle(Color("brandPrimary"))
             .cornerRadius(10)
     }
 }
 
 #Preview {
-    APButton(title: "Test")
+    APButton(title: "Test Title")
 }

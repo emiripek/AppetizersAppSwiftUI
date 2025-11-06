@@ -61,7 +61,7 @@ final class NetworkManager {
             
             do {
                 let decoder = JSONDecoder()
-                return try decoder.decode(AppetizerResponse.self, from: data).request
+                return try decoder.decode([Appetizer].self, from: data)
             } catch {
                 throw APError.invalidData
             }

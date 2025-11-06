@@ -65,13 +65,9 @@ struct AppetizerDetailView: View {
     }
 }
 
-struct AppetizerDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        AppetizerDetailView(appetizer: MockData.sampleAppetizer,
-                            isShowingDetail: .constant(true))
-    }
+#Preview {
+    AppetizerDetailView(appetizer: MockData.sampleAppetizer, isShowingDetail: .constant(true))
 }
-
 
 struct NutritionInfo: View {
     
