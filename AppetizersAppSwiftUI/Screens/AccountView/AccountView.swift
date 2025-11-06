@@ -52,7 +52,7 @@ struct AccountView: View {
                     Toggle("Extra Napkins", isOn: $viewModel.user.extraNapkins)
                     Toggle("Frequent Refills", isOn: $viewModel.user.frequentRefills)
                 }
-                .toggleStyle(SwitchToggleStyle(tint: .brandPrimary))
+                .toggleStyle(SwitchToggleStyle(tint: Color("brandPrimary")))
             }
             .navigationTitle("🤣 Account")
             .toolbar {
